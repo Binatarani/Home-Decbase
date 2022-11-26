@@ -80,10 +80,16 @@ h4{
     color: #fff;
     border-radius: 15px 0;
     padding: 10px 20px;
+    transition: 0.2s;
 }
 .header-area .nav-item:last-child .nav-link:hover{
+    font-size: 18px;
     background-color: #37806B;
-    color:#fff
+    text-transform: capitalize;
+    color:#fff;
+    border-radius: 15px 0;
+    padding: 10px 20px;
+   
 }
 /*
 Hero area css
@@ -142,7 +148,8 @@ Footer area css
     color: #646464;
     transition: .3s;
 }
-.footer-link ul li a:hover{
+.footer-link :hover ul li a{
+    display: inline-block;
     color: #37806B;
 }
 .footer-link address{
@@ -152,19 +159,20 @@ Footer area css
     display: inline-block;
     margin-right: 10px;
 }
- .footer-link .social-link li a{
-    background-color: #D5D5D5;
+ .footer-link .social-link a i{
+    background-color: #d5d5d5;
     height: 40px;
     width: 40px;
-    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    color: #fff;
-    transition: .3s;  
+    color: #f8f8f8;
+    padding: 10px;
+    transition: 0.3s;  
 }
-.footer-link .social-link li a:hover{
+.footer-link .social-link :hover a i{
     background-color: #37806B;
+    color:#fff;
 }
 .footer-bottom{
     border-top: 1px solid #c4c4c4;
@@ -221,14 +229,11 @@ Footer area css
         border: none;
         box-shadow: none;
     }
-    .header-area .nav-link{
-        padding: 10px 0;
-    }
-    .header-area .nav-item{
-     margin-left: 0;
-    }
     .header-area .nav-item:last-child{
-       margin-left: 0;
+       margin-left: 5px;
+    }
+    .header-area .nav-item:last-child .nav-link{
+        text-align: center;
     }
     /* 
     hero area css
@@ -284,7 +289,6 @@ Footer area css
     .design img{
         height: 80px;
     }
-
     }
    
 
