@@ -219,9 +219,6 @@ Footer area css
     .header-area{
         font-size: 18px;
     }
-    .header-area{
-        padding: 70px 0;
-    }
     .header-area .nav-item{
         text-align: center;
     }
@@ -230,7 +227,7 @@ Footer area css
         box-shadow: none;
     }
     .header-area .nav-item:last-child{
-       margin-left: 5px;
+       margin-left: 10px;
     }
     .header-area .nav-item:last-child .nav-link{
         text-align: center;
