@@ -251,15 +251,21 @@ background-color:#FFFFFF ;
     position: absolute;
     content: "";
     height: 100px;
-    width:50%;
+    width:22%;
     border-top: 2px solid #e0e0e0;
     border-right: 2px solid #e0e0e0;
     z-index: -1;
-   right: -50px;
+   right: -42px;
    top:100px;
 }
 .single-work-text.secial::after{
-    left: -37px;
+    position: absolute;
+    content: "";
+    height: 100px;
+    border-top: 2px solid #e0e0e0;
+    border-right: 2px solid #e0e0e0;
+    z-index: -1;
+    left: -45px;
     top:100px;
     border-right: none;
 }
@@ -270,21 +276,21 @@ background-color:#FFFFFF ;
     position: absolute;
     content: "";
     height: 100px;
-    width: 67px;
+    width: 45px;
     border-top: 2px solid #e0e0e0;
     z-index: -1;
-    right: -65px;
+    right: -43px;
     top: 100px;
 }
 .single-work-three .single-work-text::before{
     position: absolute;
     content: "";
     height: 100px;
-    width: 67px;
+    width: 45px;
     border-top: 2px solid #e0e0e0;
     border-left: 2px solid #e0e0e0;
     z-index: -1;
-    left: -65px;
+    left: -43px;
     top: 100px;
 }
 .secial{
@@ -525,7 +531,7 @@ Footer area css
     /*
     Footer area css
     */
-    .footer-area{
+     .footer-area{
         padding: 15px 0;
     }
      .footer-top{
