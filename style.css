@@ -1,5 +1,5 @@
 /*Google fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600;700;&display=swap');
 
 /*
 font-family: 'Open Sans', sans-serif;
@@ -41,6 +41,9 @@ h4{
     position: relative;
     z-index: 1;
 }
+.design-image img{
+    border-radius: 140px 0;
+}
 .design-image::after{
     position: absolute;
     content: "";
@@ -51,6 +54,42 @@ h4{
     z-index: -1;
     border-radius: 140px 0;
     border: 2px solid #B0855B;
+}
+.design-image-two{
+    position: relative;
+    z-index: 1;
+}
+.design-image-two img{
+    border-radius: 140px 0;
+}
+.design-image-two::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    left: -20px;
+    top: -20px;
+    z-index: -1;
+    border-radius: 140px 0;
+    border: 2px solid #B0855B;
+}
+.section-heading h4{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #646464;
+    font-weight: 600;
+}
+.section-heading h3{
+    font-size: 48px;  
+}
+.design-text h5{
+ font-family: 'Open Sans', sans-serif; 
+font-size: 288px;
+font-weight: 700;
+background-image: url(assets/img/text-bg.png);
+-webkit-background-clip: text;
+color: transparent;
+background-size: cover;
 }
 
 /*
@@ -95,7 +134,7 @@ h4{
 Hero area css
 */
 .hero-area{
-    padding: 70px 0;
+    padding: 30px 0;
 }
 .hero-text h3{
     font-size: 20px;
@@ -114,6 +153,145 @@ Hero area css
    width:100%;
    border-radius: 140px 0;
 }
+/*
+service area css
+*/
+.service-area{
+    padding: 100px 0;
+    position: relative;
+}
+.all-services{
+    margin-top: 60px;
+    position: relative;
+}
+.service-area .owl-nav{
+    position: absolute;
+    right: 0;
+    top: -80px;
+}
+.service-area .owl-nav span{
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    color: #646464;
+    display: inline-block;
+    border-radius: 50%;
+    transition: .3s;
+}
+.service-area .owl-nav span:hover{
+    background-color: #37806B;
+    color: #fff;
+}
+.service-area .owl-next{
+    margin-left: 15px;
+}
+.single-service{
+    background: #ffffff;
+   box-shadow: 0px 8px 20px rgba(0,0,0,0.14);
+    border-radius: 60px 0px;
+    padding: 40px 20px 40px 35px;
+    transition: .3s;
+    cursor: pointer;
+}
+.single-service:hover{
+    background-color: #CAA892;
+    color: #fff;
+}
+.single-service:hover h3{
+    color: #fff;
+}
+.service-text p{
+    margin-bottom: 0;
+}
+/*
+About area css
+*/
+.about-area{
+    padding: 100px 0;
+}
+/* Success area css
+*/
+.success-area{
+    padding: 100px 0;
+    position: relative;
+}
+.success-area .theme-button{
+    margin-top: 35px;
+}
+/*
+Work area css
+*/
+.work-area{
+padding: 100px 0;
+background-color:#FFFFFF ;
+}
+.all-work{
+    margin-top: 100px;
+}
+.single-work{
+    display: flex;
+    justify-content: center;
+  
+}
+.single-work-text{
+    background: #ffffff;
+    box-shadow: 0px 13px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 40px 0;
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
+.single-work-text::after {
+    position: absolute;
+    content: "";
+    height: 100px;
+    width:50%;
+    border-top: 2px solid #e0e0e0;
+    border-right: 2px solid #e0e0e0;
+    z-index: -1;
+   right: -50px;
+   top:100px;
+}
+.single-work-text.secial::after{
+    left: -37px;
+    top:100px;
+    border-right: none;
+}
+.single-work-text h3{
+    font-size: 50px;
+}
+.single-work-two .single-work-text::before{
+    position: absolute;
+    content: "";
+    height: 100px;
+    width: 67px;
+    border-top: 2px solid #e0e0e0;
+    z-index: -1;
+    right: -65px;
+    top: 100px;
+}
+.single-work-three .single-work-text::before{
+    position: absolute;
+    content: "";
+    height: 100px;
+    width: 67px;
+    border-top: 2px solid #e0e0e0;
+    border-left: 2px solid #e0e0e0;
+    z-index: -1;
+    left: -65px;
+    top: 100px;
+}
+.secial{
+    margin-top: 100px;
+}
+
+
 /*
 Footer area css
 */
@@ -146,7 +324,7 @@ Footer area css
     padding: 5px;
     text-decoration: none;
     color: #646464;
-    transition: .3s;
+    transition: 0.3s;
 }
 .footer-link :hover ul li a{
     display: inline-block;
@@ -167,7 +345,7 @@ Footer area css
     align-items: center;
     border-radius: 50%;
     color: #f8f8f8;
-    padding: 10px;
+    padding: 14px;
     transition: 0.3s;  
 }
 .footer-link .social-link :hover a i{
@@ -236,7 +414,7 @@ Footer area css
     hero area css
      */
     .hero-area{
-        padding: 15px 0;
+        padding: 60px 0;
     }
     .hero-area{
         text-align: center;
@@ -251,12 +429,98 @@ Footer area css
         font-size: 15px;
     }
     .hero-area .hero-image{
-        margin-top: 4opx;
-        width: 93%;
+        margin-top: 40px;
+        margin-left: 0;
+        margin-right: 20px;
+        width: 90%;
         border-radius: 120px;
     }
     .hero-area .theme-button{
         margin-bottom: 40px;
+    }
+    /*
+    Service area css
+    */
+     .service-area{
+        padding: 80px 0; 
+     }
+     .service-area h3{
+        text-align: center;
+     }
+     .service-area h4{
+        text-align: center;
+     }  
+    .service-area span{
+        margin-top: 30px;  
+    }
+    /*
+    About area css
+    */
+    .about-area{
+        text-align: center;
+        padding: 80px 0;
+        margin-bottom: 0;
+    }
+    .about-area .about-img{
+       width: 90%;
+       margin-left: 20px;
+       margin-right: 0;
+    }
+    .about-area .design-image::after{
+        left:0;
+    }
+.about-area .about-text{
+    margin-left: 0;
+} 
+    .about-area h4{
+        font-size: 20px;
+        margin-top:80px;
+    }
+    .about-area h3{
+        font-size: 45px;
+    }
+    .about-area p{
+        font-size: 15px;
+        margin-left: 1px;
+    }
+    .about-area .theme-button{
+      width: 50%;
+      margin-top: 40px;
+    }
+    /*
+    Success area css
+    */
+    .success-area{
+        padding: 50px 0;
+        text-align: center;
+    }
+    .success-area .design-text h5{
+       text-align: center;
+    }
+    .success-area .design-text h3{
+        font-size: 45px;
+    }
+    .success-area .theme-button{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .success-area .success-img{
+        margin-top: 40px;
+        margin-left: 0;
+        margin-right: 20px;
+        width: 90%;
+        border-radius: 120px;
+    }
+    /*
+    Work area css
+    */
+    .work-area{
+        text-align: center;
+        padding: 80px 0;
+        margin-bottom: 0;
+    }
+    .work-area h3{
+        font-size: 45px;
     }
     /*
     Footer area css
@@ -285,7 +549,5 @@ Footer area css
     }
     .design img{
         height: 80px;
-    }
-    }
-   
-
+    }  
+}
