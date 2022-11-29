@@ -42,6 +42,7 @@ h4{
     z-index: 1;
 }
 .design-image img{
+    width: 100%;
     border-radius: 140px 0;
 }
 .design-image::after{
@@ -375,7 +376,19 @@ Testimonial area css
 .testimonial-area .owl-next{
     margin-left: 15px;
 }
-
+  /*
+    blog area css
+    */
+    .blog-area{
+        background-color: #f8f8f8;
+        padding: 100px 0;
+    }
+    .blog-area .section-heading{
+        margin-bottom: 70px;
+    }
+    .blog-text{
+        margin-top: 40px;
+    }
 /*
 Footer area css
 */
@@ -618,6 +631,30 @@ Footer area css
     }
     .testimonial-area .section-heading  h3{
         font-size: 45px;
+    }
+    /*
+    Blog area css
+    */
+    .blog-area{
+        padding: 80px 0;
+        margin-bottom: 0;
+    }
+    .blog-area .section-heading  h4{
+        font-size: 20px;
+    }
+    .blog-area .section-heading  h3{
+        font-size: 45px;
+    }
+    .blog-area .blog-image{
+        margin-top: 40px;
+        margin-left: 0;
+        margin-right: 20px;
+        width: 90%;
+        border-radius: 120px;
+    }
+    .blog-area .theme-button{
+        margin-top: 20px;
+        margin-bottom: 40px;
     }
     /*
     Footer area css
