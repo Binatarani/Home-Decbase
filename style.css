@@ -256,7 +256,7 @@ background-color:#FFFFFF ;
     border-top: 2px solid #e0e0e0;
     border-right: 2px solid #e0e0e0;
     z-index: -1;
-   right: -42px;
+   right: -44px;
    top:100px;
 }
 .single-work-text.secial::after{
@@ -266,7 +266,7 @@ background-color:#FFFFFF ;
     border-top: 2px solid #e0e0e0;
     border-right: 2px solid #e0e0e0;
     z-index: -1;
-    left: -45px;
+    left: -43px;
     top:100px;
     border-right: none;
 }
@@ -280,7 +280,7 @@ background-color:#FFFFFF ;
     width: 45px;
     border-top: 2px solid #e0e0e0;
     z-index: -1;
-    right: -43px;
+    right: -45px;
     top: 100px;
 }
 .single-work-three .single-work-text::before{
@@ -291,7 +291,7 @@ background-color:#FFFFFF ;
     border-top: 2px solid #e0e0e0;
     border-left: 2px solid #e0e0e0;
     z-index: -1;
-    left: -43px;
+    left: -42px;
     top: 100px;
 }
 .secial{
@@ -389,12 +389,57 @@ Testimonial area css
     .blog-text{
         margin-top: 40px;
     }
+    /*
+    Singup area
+    */
+    .singup-area{
+        padding: 180px 0;
+    }
+    .singup-text h3{
+        font-size: 48px;
+        margin-bottom: 22px;
+        padding-bottom: 22px;
+        position: relative;
+    }
+    .singup-text h3::after{
+        position: absolute;
+        content: "";
+        height: 1px;
+        width: 400px;
+        background-color: #c4c4c4;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .signup-text p{
+        margin-bottom: 45px;
+    }
+
+    .signup-area .form-control{
+        background-color: #eeeeee;
+      border: none;
+       font-size: 20px;
+       border-radius: 20px 0 0 0;
+       padding: 10px 15px;
+    }
+    .signup-area button{
+    border: none;
+    background-color: #37806B;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 0 0 20px 0;
+   }
+   .signup-area button:hover{
+    background-color: #B0855B;
+
+   }
 /*
 Footer area css
 */
 .footer-area{
     background-color: #f8f8f8;
     position: relative;
+    padding-top: 100px;
 }
 .footer-top{
     padding-top: 90px 0; 
@@ -525,7 +570,7 @@ Footer area css
     .hero-area .hero-text p{
         font-size: 15px;
     }
-    .hero-area .hero-image{
+    .hero-area .design-image{
         margin-top: 40px;
         margin-left: 0;
         margin-right: 20px;
@@ -657,10 +702,30 @@ Footer area css
         margin-bottom: 40px;
     }
     /*
+    Singup area
+    */
+    .singup-area{
+        padding: 80px 0;
+    }
+    .singup-area .signup-text h3{
+        font-size: 45px;
+    }
+    .singup-area .singup-text p{
+        font-size: 15px;
+        margin-left: 1px;
+    }
+    .signup-area .form-control{
+        font-size: 14px;
+    }
+    .signup-area .form-control button{
+        font-size: 15px;
+    }
+    /*
     Footer area css
     */
      .footer-area{
-        padding: 15px 0;
+        padding: 40px 0;
+        padding-top: 60px;
     }
      .footer-top{
         text-align: center;
